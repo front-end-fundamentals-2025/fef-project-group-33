@@ -1,0 +1,123 @@
+* {
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* header */
+
+header {
+  display: flex;
+  align-items: center;
+  min-height: 50px;
+}
+
+#portf {
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 2px solid black;
+  display: inline;
+  padding: 5px;
+  margin-left: 10px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  margin-left: 3rem;
+}
+
+a {
+  color: black;
+}
+
+@media screen and (max-width: 520px) {
+  header,
+  ul {
+    flex-direction: column;
+    align-items: start;
+  }
+  li {
+    margin-left: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .portf-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .portf-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* main */
+
+main {
+  flex: 1;
+}
+
+.main-img {
+  width: 30%;
+}
+
+.plane {
+  width: 30%;
+  animation-name: boom;
+  animation-duration: 3s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+.portfolio-img {
+  width: 100%;
+}
+.no-margin-left {
+  margin-left: 0;
+}
+
+figcaption {
+  font-size: x-large;
+}
+
+@keyframes boom {
+  from {
+    transform: translateX(1200px) translateY(0px) scale(1);
+  }
+  to {
+    transform: translateX(600px) translateY(-140px) scale(1.5) rotate(-20deg);
+  }
+}
+@keyframes burn {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+.fire {
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+  animation-name: burn;
+}
+/* footer */
+
+footer {
+  margin-top: 3rem;
+  border-top: 1px solid black;
+  min-height: 50px;
+}
