@@ -127,13 +127,8 @@ main {
 .main-img {
   width: 30%;
 }
-
-.plane {
-  width: 30%;
-  animation-name: boom;
-  animation-duration: 3s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: both;
+.ten-percent {
+  width: 10%;
 }
 
 .bullet {
@@ -149,6 +144,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.profile-thing {
+  display: flex;
+  flex-direction: row;
+}
+.empty-section {
+  width: 100%;
+  height: 200px;
 }
 
 figcaption {
