@@ -136,6 +136,12 @@ main {
   animation-fill-mode: both;
 }
 
+.bullet {
+  list-style: disc;
+  padding-left: 1rem;
+  font-size: 0.9rem;
+}
+
 .portfolio-img {
   width: 100%;
 }
