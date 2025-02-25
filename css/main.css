@@ -160,6 +160,18 @@ main {
   text-align: center;
 }
 
+.cart-thing {
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 25px;
+  width: 1050px;
+  height: 200px;
+  background-color: #b2daa4;
+  display: flex;
+  position: c;
+  flex-direction: row;
+}
+
 figcaption {
   font-size: x-large;
 }
