@@ -153,6 +153,15 @@ main {
   display: flex;
   flex-direction: row;
 }
+.item-thing {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 200px;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
 .empty-section {
   width: 100%;
   margin-top: 100px;
