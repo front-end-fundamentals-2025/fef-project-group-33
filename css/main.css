@@ -120,6 +120,18 @@ a {
 
 /* main */
 
+.cart-thing {
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 25px;
+  width: 1050px;
+  height: 200px;
+  background-color: #b2daa4;
+  display: flex;
+  position: c;
+  flex-direction: row;
+}
+
 main {
   flex: 1;
 }
@@ -135,14 +147,33 @@ main {
   width: 10%;
   height: 50%;
   margin-top: 75px;
-  margin-left: -112px;
+  margin-left: -130px;
 }
 
 .smoller-percent {
   width: 4%;
   height: 20%;
   margin-top: 20px;
-  margin-left: 30px;
+  margin-left: 20px;
+}
+
+#pork-text {
+  margin-left: 15px;
+}
+
+#hamy-text {
+  margin-top: 70px;
+  margin-left: 15px;
+}
+
+#price-text {
+  margin-top: 90px;
+  margin-left: -125px;
+}
+
+#checkout-button {
+  margin-top: 50px;
+  text-align: center;
 }
 
 .bullet {
@@ -181,18 +212,6 @@ main {
   margin-top: 100px;
   margin-bottom: 100px;
   text-align: center;
-}
-
-.cart-thing {
-  margin: auto;
-  margin-top: 50px;
-  border-radius: 25px;
-  width: 1050px;
-  height: 200px;
-  background-color: #b2daa4;
-  display: flex;
-  position: c;
-  flex-direction: row;
 }
 
 figcaption {
