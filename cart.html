@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Log In</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,19 +27,22 @@
       </nav>
     </header>
     <main>
-      <h1>LOG IN</h1>
-      <p>Email</p>
-      <p></p>
-      <form action="/url" method="GET">
-        <input type="text" name="name" placeholder="example@gmail.com" />
-      </form>
-      <p>Password</p>
-      <p></p>
-      <form action="/url" method="GET">
-        <input type="text" name="name" placeholder="password" />
-      </form>
-      <p>Confirm</p>
-      <p>Don't have an account? <a href="signin.html"> Sign In</a></p>
+      <img class="banner" src="img/cartBanner.png" alt="banner saying: Cart" />
+
+      <figure class="cart-thing">
+        <img
+          class="smoller-percent"
+          src="img/placeholder.png"
+          alt="placeholder"
+        />
+        <p id="pork-text" style="align-items: baseline">John Pork</p>
+        <img class="smol-percent" src="img/placeholder.png" alt="placeholder" />
+        <p id="hamy-text" style="align-items: baseline">Hammy Shlammy</p>
+        <p id="price-text" style="align-items: baseline">10SEK</p>
+      </figure>
+      <p id="checkout-button">
+        <a href="checkout.html">CHECK OUT</a>
+      </p>
     </main>
     <footer>
       <ul>
