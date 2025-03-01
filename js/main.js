@@ -1,4 +1,5 @@
 document.getElementById("myUL").style.display = "none";
+
 function myFunction() {
   var input, filter, ul, li, a, i, txtValue;
   input = document.getElementById("myInput");
@@ -7,7 +8,6 @@ function myFunction() {
   li = ul.getElementsByClassName("searchlist");
 
   for (i = 0; i < li.length; i++) {
-    document.getElementById("myUL").style.display = "none";
     a = li[i].getElementsByTagName("a")[0];
     txtValue = a.textContent || a.innerText;
     if (txtValue.toUpperCase().indexOf(filter) > -1) {
