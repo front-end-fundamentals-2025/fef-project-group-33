@@ -246,6 +246,11 @@ main {
   align-items: center;
 }
 
+.index-textsize {
+  font-size: 14pt;
+  margin-top: 10pt;
+}
+
 .anchor-lines {
   text-decoration: none;
 }
