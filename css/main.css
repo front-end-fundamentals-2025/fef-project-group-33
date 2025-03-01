@@ -65,7 +65,7 @@ header {
 
 .headerul {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   list-style: none;
   padding-left: 0;
@@ -177,8 +177,21 @@ main {
 .ten-percent {
   width: 10%;
 }
+.seventy-percent {
+  width: 70%;
+}
 .nospace {
   font-size: 0;
+}
+
+.green-bg {
+  padding: 10px;
+}
+
+.green-bg:hover {
+  border-radius: 20px;
+  background-color: rgba(178, 218, 164, 0.5);
+  padding: 10px;
 }
 
 .smol-percent {
