@@ -72,11 +72,6 @@ header {
   margin: 0px;
 }
 
-li {
-  margin-left: 3rem;
-  margin-right: 3rem;
-}
-
 a {
   color: black;
 }
@@ -178,20 +173,22 @@ main {
   width: 10%;
 }
 .seventy-percent {
-  width: 70%;
+  width: 30px;
+  margin: 0;
 }
 .nospace {
   font-size: 0;
 }
 
 .green-bg {
-  padding: 10px;
+  padding: 15px;
+  margin: 0 auto;
 }
 
 .green-bg:hover {
   border-radius: 20px;
   background-color: rgba(178, 218, 164, 0.5);
-  padding: 10px;
+  padding: 15px;
 }
 
 .smol-percent {
