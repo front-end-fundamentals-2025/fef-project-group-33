@@ -226,10 +226,15 @@ main {
   align-items: center;
 }
 
+.anchor-lines {
+  text-decoration: none;
+  text-align: left;
+}
+
 .caption-text {
-  margin-top: 10pt;
+  margin-top: 7pt;
   font-size: 11pt;
-  /* text-decoration: none; gotta add this to anchor tag */
+  margin-left: 0pt;
 }
 
 .profile-thing {
