@@ -11,15 +11,36 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="headerul">
           <p id="portf">THIRFTIQUE</p>
           <a href="deals.html"><li>Deals</li></a>
-          <a href="portfolio.html"><li>Searchbar placeholder</li></a>
-          <a href="contact.html"><li>Sell now</li></a>
+          <div>
+            <input
+              type="text"
+              id="myInput"
+              onkeyup="myFunction()"
+              placeholder="Search..."
+              title="Search"
+            />
+
+            <ul id="myUL">
+              <li class="searchlist"><a href="deals.html">Deals</a></li>
+              <li class="searchlist"><a href="#">Agnes</a></li>
+
+              <li class="searchlist"><a href="#">Billy</a></li>
+              <li class="searchlist"><a href="#">Bob</a></li>
+
+              <li class="searchlist"><a href="#">Calvin</a></li>
+              <li class="searchlist"><a href="#">Christina</a></li>
+              <li class="searchlist"><a href="#">Cindy</a></li>
+            </ul>
+          </div>
+
           <a href="signin.html"><li>Sign up</li></a>
           <a href="login.html"><li>Log in</li></a>
           <a href="cart.html"><li>Cart Placeholder</li></a>
@@ -122,7 +143,7 @@
       </section>
     </main>
     <footer>
-      <ul>
+      <ul class="headerul">
         <a href="about us.html"><li>About us</li></a>
         <a href="privacy.html"><li>Privacy Policy</li></a>
         <a href="contact.html"><li>Cookie Settings</li></a>
