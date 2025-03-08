@@ -13,6 +13,14 @@ body {
   flex-direction: column;
 }
 
+p {
+  margin-left: 10pt;
+}
+
+h3 {
+  margin-left: 10pt;
+}
+
 /* header */
 
 header {
@@ -62,7 +70,6 @@ header {
 
 .no-margin {
   margin: 0pt;
-  margin-left: 0pt !important;
 }
 
 .banner {
@@ -150,11 +157,17 @@ a {
   }
 }
 
+/* main */
+
+.image-float {
+  float: left;
+  display: flex;
+  width: 400pt;
+}
+
 .categories-text-centered {
   text-align: center;
 }
-
-/* main */
 
 .cart-thing {
   margin: auto;
@@ -309,10 +322,6 @@ main {
 
 figcaption {
   font-size: x-large;
-}
-
-.paragraph-indent {
-  margin-left: 10pt;
 }
 
 .paragraph-last {
