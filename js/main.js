@@ -26,9 +26,20 @@ function myFunction() {
 
 // cart function
 let listProductHTML = document.querySelector(".listProduct");
+let listCartHTML = document.querySelector(".listCart");
+let iconCart = document.querySelector(".icon-cart");
+let iconCartSpan = document.querySelector(".icon-cart span");
 let body = document.querySelector("body");
+let closeCart = document.querySelector(".close");
 let products = [];
 let cart = [];
+
+iconCart.addEventListener("click", () => {
+  body.classList.toggle("showCart");
+});
+closeCart.addEventListener("click", () => {
+  body.classList.toggle("showCart");
+});
 
 const addDataToHTML = () => {
   // remove datas default from HTML
@@ -157,7 +168,7 @@ const changeQuantityCart = (product_id, type) => {
 
 const initApp = () => {
   // get data product
-  fetch("products.json")
+  fetch("json/products.json")
     .then((response) => response.json())
     .then((data) => {
       products = data;
