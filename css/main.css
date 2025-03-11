@@ -296,6 +296,7 @@ main {
   display: flex;
   flex-direction: row;
 }
+
 .item-thing {
   margin: 0;
   padding-top: 40px;
@@ -304,6 +305,7 @@ main {
   display: flex;
   flex-direction: row;
 }
+
 .item-thing-2 {
   margin: 0;
   padding-top: 40px;
@@ -327,6 +329,21 @@ figcaption {
 .paragraph-last {
   margin-left: 10pt;
   margin-bottom: 40pt;
+}
+
+#rectangle {
+  display: flex;
+  width: 500px;
+  height: 450px;
+  background: #d3bdff;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @keyframes boom {
