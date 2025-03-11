@@ -325,6 +325,7 @@ body.showCart .container {
   width: 30px;
   margin: 0;
 }
+
 .nospace {
   font-size: 0;
 }
@@ -472,6 +473,41 @@ figcaption {
   margin-bottom: 40pt;
 }
 
+/*ITEM PICKED*/
+.view-image {
+  width: 500px;
+}
+
+.view-text {
+  align-items: baseline;
+  margin-top: 0px;
+  margin-left: 16px;
+}
+
+.smaller-viewtext {
+  align-items: baseline;
+  margin-top: 10px;
+  margin-left: 16px;
+  font-size: 11pt;
+}
+
+.line1 {
+  height: 80px;
+  border-bottom: 1px solid black;
+}
+
+.view-userimage {
+  width: 70px;
+  margin-top: 10px;
+  margin-left: 0px;
+}
+
+.view-starsimage {
+  width: 90px;
+  height: 20px;
+  margin-top: 28px;
+  margin-left: 20px;
+}
 /*LOGIN AND SIGNUP*/
 
 .main-color {
