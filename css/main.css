@@ -479,7 +479,7 @@ figcaption {
 }
 
 .h1log {
-  margin-left: 40%;
+  margin-left: 37%;
   margin-top: 5%;
 }
 
@@ -508,8 +508,8 @@ figcaption {
 
 #rectangle {
   display: flexbox;
-  width: 40%;
-  height: 65%;
+  width: 30%;
+  height: 60%;
   background: #d3bdff;
   border-radius: 5%;
   justify-content: center;
