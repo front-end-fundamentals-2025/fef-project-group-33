@@ -7,44 +7,50 @@
   },
   {
     "id": 2,
-    "name": " LD02 LOUNGE CHAIR",
-    "price": 250,
-    "image": "image/2.png"
+    "name": " Plant Sweater",
+    "price": 100,
+    "image": "img/top3.png"
   },
   {
     "id": 3,
-    "name": " LD03 LOUNGE CHAIR",
-    "price": 290,
-    "image": "image/3.png"
+    "name": " Gold Ice (on your wrist)",
+    "price": 150,
+    "image": "img/bracelet1.png"
   },
   {
     "id": 4,
-    "name": " LD04 LOUNGE CHAIR",
-    "price": 200,
-    "image": "image/4.png"
+    "name": " Thick Black Framed Glasses",
+    "price": 150,
+    "image": "img/glasses1.png"
   },
   {
     "id": 5,
-    "name": " LD05 LOUNGE CHAIR",
-    "price": 300,
-    "image": "image/5.png"
+    "name": " CowFella Hat",
+    "price": 250,
+    "image": "img/hat2.png"
   },
   {
     "id": 6,
-    "name": " LD06 LOUNGE CHAIR",
-    "price": 200,
-    "image": "image/6.png"
+    "name": " Domino Chain Bag",
+    "price": 250,
+    "image": "img/bag3.png"
   },
   {
     "id": 7,
-    "name": " LD07 LOUNGE CHAIR",
-    "price": 200,
-    "image": "image/7.png"
+    "name": " Silver AND Gold Ice",
+    "price": 90,
+    "image": "img/earring2.png"
   },
   {
     "id": 8,
-    "name": " LD08 LOUNGE CHAIR",
+    "name": " Gold Heart Ice",
     "price": 200,
-    "image": "image/8.png"
+    "image": "img/necklace3.png"
+  },
+  {
+    "id": 8,
+    "name": " Edward Shoes",
+    "price": 100,
+    "image": "img/shoes1.png"
   }
 ]
