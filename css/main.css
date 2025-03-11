@@ -454,15 +454,26 @@ figcaption {
   margin-bottom: 40pt;
 }
 
+/*LOGIN AND SIGNUP*/
+
+.h1log {
+  margin-left: 140pt;
+  margin-top: 30pt;
+}
+
+.formlog {
+  margin-left: 10pt;
+  margin-bottom: 30pt;
+}
+
 #rectangle {
-  display: flex;
+  display: flexbox;
   width: 500px;
-  height: 450px;
+  height: 420px;
   background: #d3bdff;
   border-radius: 5%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  align-items: flex-start;
   position: absolute;
   top: 50%;
   left: 50%;
