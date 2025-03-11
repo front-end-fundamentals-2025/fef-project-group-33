@@ -13,7 +13,7 @@
     />
     <script src="js/main.js" defer></script>
   </head>
-  <body>
+  <body class="">
     <header>
       <nav>
         <ul class="headerul">
@@ -45,10 +45,12 @@
             ><li>Sign up</li></a
           >
           <a class="green-bg anchor-lines" href="login.html"><li>Log in</li></a>
-          <a class="green-bg anchor-lines" href="cart.html"
-            ><li>
-              <img class="seventy-percent" src="img/bag 1.png" alt="cart" /></li
-          ></a>
+          <div class="green-bg anchor-lines icon-cart">
+            <li>
+              <img class="seventy-percent" src="img/bag 1.png" alt="cart" />
+              <span>0</span>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
@@ -98,98 +100,15 @@
         </a>
       </section>
       <img class="banner" src="img/deals.png" alt="deals section" />
-      <section class="deals-container">
-        <a href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/placeholder.png"
-              alt="placeholder"
-            />
-            <figcaption>Starry night</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/placeholder.png"
-              alt="placeholder"
-            />
-            <figcaption>Starry night</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/placeholder.png"
-              alt="placeholder"
-            />
-            <figcaption>Starry night</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/placeholder.png"
-              alt="placeholder"
-            />
-            <figcaption>Starry night</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/placeholder.png"
-              alt="placeholder"
-            />
-            <figcaption>Starry night</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/placeholder.png"
-              alt="placeholder"
-            />
-            <figcaption>Starry night</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/placeholder.png"
-              alt="placeholder"
-            />
-            <figcaption>Starry night</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/placeholder.png"
-              alt="placeholder"
-            />
-            <figcaption>Starry night</figcaption>
-          </figure>
-        </a>
-        <a href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/placeholder.png"
-              alt="placeholder"
-            />
-            <figcaption>Starry night</figcaption>
-          </figure>
-        </a>
-      </section>
+      <div class="listProduct"></div>
+      <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="btn">
+          <button class="close">CLOSE</button>
+          <button class="checkOut">CHECK OUT</button>
+        </div>
+      </div>
     </main>
     <footer>
       <ul class="headerul">
@@ -201,3 +120,93 @@
     </footer>
   </body>
 </html>
+<!-- <a href="#">
+          <figure class="no-margin-left">
+            <img
+              class="portfolio-img"
+              src="img/placeholder.png"
+              alt="placeholder"
+            />
+            <figcaption>Starry night</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="no-margin-left">
+            <img
+              class="portfolio-img"
+              src="img/placeholder.png"
+              alt="placeholder"
+            />
+            <figcaption>Starry night</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="no-margin-left">
+            <img
+              class="portfolio-img"
+              src="img/placeholder.png"
+              alt="placeholder"
+            />
+            <figcaption>Starry night</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="no-margin-left">
+            <img
+              class="portfolio-img"
+              src="img/placeholder.png"
+              alt="placeholder"
+            />
+            <figcaption>Starry night</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="no-margin-left">
+            <img
+              class="portfolio-img"
+              src="img/placeholder.png"
+              alt="placeholder"
+            />
+            <figcaption>Starry night</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="no-margin-left">
+            <img
+              class="portfolio-img"
+              src="img/placeholder.png"
+              alt="placeholder"
+            />
+            <figcaption>Starry night</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="no-margin-left">
+            <img
+              class="portfolio-img"
+              src="img/placeholder.png"
+              alt="placeholder"
+            />
+            <figcaption>Starry night</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="no-margin-left">
+            <img
+              class="portfolio-img"
+              src="img/placeholder.png"
+              alt="placeholder"
+            />
+            <figcaption>Starry night</figcaption>
+          </figure>
+        </a>
+        <a href="#">
+          <figure class="no-margin-left">
+            <img
+              class="portfolio-img"
+              src="img/placeholder.png"
+              alt="placeholder"
+            />
+            <figcaption>Starry night</figcaption>
+          </figure>
+        </a> -->
