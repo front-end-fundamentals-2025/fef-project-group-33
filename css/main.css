@@ -121,7 +121,8 @@ header {
   background-color: #eee;
 }
 
-li {
+li,
+figcaption {
   color: var(--color);
 }
 #portf {
