@@ -1,3 +1,45 @@
+:root {
+  --background-color: white;
+  --base-variant: #e8e9ed;
+  --color: black;
+  --primary-color: #1d2545;
+}
+.darkmode {
+  --background-color: #353432;
+  --base-variant: #1d2545;
+  --color: white;
+  --primary-color: #e8e9ed;
+}
+
+#theme-switch {
+  height: 50px;
+  width: 50px;
+  padding: 0px;
+  border-radius: 50%;
+  background-color: var(--base-variant);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: fixed; */
+  top: 20px;
+}
+
+#theme-switch svg {
+  fill: var(--primary-color);
+}
+
+#theme-switch svg:last-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:first-child {
+  display: none;
+}
+
+.darkmode #theme-switch svg:last-child {
+  display: block;
+}
+
 * {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
@@ -11,6 +53,8 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: var(--background-color);
+  color: var(--color);
 }
 
 p {
