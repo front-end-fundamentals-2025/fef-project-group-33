@@ -49,7 +49,6 @@ const initApp = () => {
     });
 };
 initApp();
-
 iconCart.addEventListener("click", () => {
   body.classList.toggle("showCart");
 });
@@ -110,7 +109,7 @@ const addCartToMemory = () => {
 };
 const addCartToHTML = () => {
   listCartHTML.innerHTML = "";
-  let totalQuantity;
+  let totalQuantity = 0;
   if (cart.length > 0) {
     cart.forEach((item) => {
       totalQuantity = totalQuantity + item.quantity;
