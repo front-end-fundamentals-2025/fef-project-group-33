@@ -121,6 +121,9 @@ header {
   background-color: #eee;
 }
 
+li {
+  color: var(--color);
+}
 #portf {
   font-weight: 600;
   font-size: 1.2rem;
