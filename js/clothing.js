@@ -33,6 +33,22 @@ let body = document.querySelector("body");
 let closeCart = document.querySelector(".close");
 let products = [];
 let cart = [];
+const initApp = () => {
+  // get data product
+  fetch("json/clothing.json")
+    .then((response) => response.json())
+    .then((data) => {
+      products = data;
+      addDataToHTML();
+
+      // get data cart from memory
+      if (localStorage.getItem("cart")) {
+        cart = JSON.parse(localStorage.getItem("cart"));
+        addCartToHTML();
+      }
+    });
+};
+initApp();
 
 iconCart.addEventListener("click", () => {
   body.classList.toggle("showCart");
@@ -165,23 +181,6 @@ const changeQuantityCart = (product_id, type) => {
   addCartToHTML();
   addCartToMemory();
 };
-
-const initApp = () => {
-  // get data product
-  fetch("json/clothing.json")
-    .then((response) => response.json())
-    .then((data) => {
-      products = data;
-      addDataToHTML();
-
-      // get data cart from memory
-      if (localStorage.getItem("cart")) {
-        cart = JSON.parse(localStorage.getItem("cart"));
-        addCartToHTML();
-      }
-    });
-};
-initApp();
 
 //DARKMODE//
 //inspired by: https://www.youtube.com/watch?v=_gKEUYarehE//
