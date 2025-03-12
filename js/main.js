@@ -184,6 +184,7 @@ const initApp = () => {
 initApp();
 
 //DARKMODE//
+//inspired by: https://www.youtube.com/watch?v=_gKEUYarehE//
 
 let darkmode = localStorage.getItem("darkmode");
 const themeSwitch = document.getElementById("theme-switch");
