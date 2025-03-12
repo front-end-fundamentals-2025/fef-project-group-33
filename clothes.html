@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clothes and Shoes</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="js/main.js" defer></script>
+    <script src="js/clothing.js" defer></script>
   </head>
   <body>
     <header>
@@ -30,14 +30,17 @@
 
             <ul id="myUL">
               <li class="searchlist"><a href="deals.html">Deals</a></li>
-              <li class="searchlist"><a href="#">Agnes</a></li>
+              <li class="searchlist"><a href="signin.html">Sign up</a></li>
 
-              <li class="searchlist"><a href="#">Billy</a></li>
+              <li class="searchlist"><a href="login.html">Log In</a></li>
               <li class="searchlist"><a href="#">Bob</a></li>
 
-              <li class="searchlist"><a href="#">Calvin</a></li>
-              <li class="searchlist"><a href="#">Christina</a></li>
-              <li class="searchlist"><a href="#">Cindy</a></li>
+              <li class="searchlist"><a href="about us.html">About us</a></li>
+              <li class="searchlist">
+                <a href="privacy.html">Privacy Policy</a>
+              </li>
+              <li class="searchlist"><a href="faq.html">FAQ</a></li>
+              <li class="searchlist"><a href="contact.html">Contact</a></li>
             </ul>
           </div>
 
@@ -45,83 +48,50 @@
             ><li>Sign up</li></a
           >
           <a class="green-bg anchor-lines" href="login.html"><li>Log in</li></a>
-          <a class="green-bg anchor-lines" href="cart.html"
-            ><li>Cart Placeholder</li></a
-          >
+          <button id="theme-switch">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e3e3e3"
+            >
+              <path
+                d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+              />
+            </svg>
+          </button>
+          <div class="green-bg anchor-lines icon-cart">
+            <li>
+              <img class="seventy-percent" src="img/bag 1.png" alt="cart" />
+              <span>0</span>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
     <main>
       <img class="banner" src="img/clothesBanner.png" alt="clothes section" />
-      <section class="deals-container">
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/top1.png" alt="top1" />
-            <figcaption class="caption-text">Fish Sweater</figcaption>
-            <figcaption class="price-text">100 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/top2.png" alt="top2" />
-            <figcaption class="caption-text">Fuzzy Sweater</figcaption>
-            <figcaption class="price-text">100 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/top3.png" alt="top3" />
-            <figcaption class="caption-text">Plant Sweater</figcaption>
-            <figcaption class="price-text">100 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/bottom1.png" alt="bottom1" />
-            <figcaption class="caption-text">Star Pants</figcaption>
-            <figcaption class="price-text">100 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/bottom2.png" alt="bottom2" />
-            <figcaption class="caption-text">Grey Pants(with tie)</figcaption>
-            <figcaption class="price-text">100 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/bottom3.png" alt="bottom3" />
-            <figcaption class="caption-text">Wool Skirt</figcaption>
-            <figcaption class="price-text">100 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/shoes1.png" alt="Edward shoe" />
-            <figcaption class="caption-text">Edward Shoes</figcaption>
-            <figcaption class="price-text">100 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/shoes2.png" alt="Jacob shoe" />
-            <figcaption class="caption-text">Jacob Shoes</figcaption>
-            <figcaption class="price-text">100 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/shoes3.png"
-              alt="Charlie shoe"
-            />
-            <figcaption class="caption-text">Charlie Shoes</figcaption>
-            <figcaption class="price-text">100 SEK</figcaption>
-          </figure>
-        </a>
-      </section>
+      <div class="listProduct"></div>
+      <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="btn">
+          <button class="close">CLOSE</button>
+          <button class="checkOut">CHECK OUT</button>
+        </div>
+      </div>
     </main>
     <footer>
       <ul class="headerul">
@@ -133,3 +103,72 @@
     </footer>
   </body>
 </html>
+<!-- <section class="deals-container">
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/top1.png" alt="top1" />
+      <figcaption class="caption-text">Fish Sweater</figcaption>
+      <figcaption class="price-text">100 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/top2.png" alt="top2" />
+      <figcaption class="caption-text">Fuzzy Sweater</figcaption>
+      <figcaption class="price-text">100 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/top3.png" alt="top3" />
+      <figcaption class="caption-text">Plant Sweater</figcaption>
+      <figcaption class="price-text">100 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/bottom1.png" alt="bottom1" />
+      <figcaption class="caption-text">Star Pants</figcaption>
+      <figcaption class="price-text">100 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/bottom2.png" alt="bottom2" />
+      <figcaption class="caption-text">Grey Pants(with tie)</figcaption>
+      <figcaption class="price-text">100 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/bottom3.png" alt="bottom3" />
+      <figcaption class="caption-text">Wool Skirt</figcaption>
+      <figcaption class="price-text">100 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/shoes1.png" alt="Edward shoe" />
+      <figcaption class="caption-text">Edward Shoes</figcaption>
+      <figcaption class="price-text">100 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/shoes2.png" alt="Jacob shoe" />
+      <figcaption class="caption-text">Jacob Shoes</figcaption>
+      <figcaption class="price-text">100 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img
+        class="portfolio-img"
+        src="img/shoes3.png"
+        alt="Charlie shoe"
+      />
+      <figcaption class="caption-text">Charlie Shoes</figcaption>
+      <figcaption class="price-text">100 SEK</figcaption>
+    </figure>
+  </a>
+</section> -->
