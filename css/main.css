@@ -3,6 +3,7 @@
   --base-variant: #e8e9ed;
   --color: black;
   --primary-color: #1d2545;
+  --accent-color: #5e17eb;
 }
 .darkmode {
   --background-color: #353432;
@@ -598,7 +599,128 @@ figcaption {
   margin-left: 20px;
 }
 /*LOGIN AND SIGNUP*/
+.wrapper {
+  box-sizing: border-box;
+  background-color: var(--background-color);
+  height: 100vh;
+  width: max(40%, 600);
+  padding: 10px;
+  border-radius: 0 20px 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+form {
+  width: min(400px, 100%);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
 
+form > div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form label {
+  flex-shrink: 0;
+  height: 50px;
+  width: 50px;
+  background-color: var(--accent-color);
+  fill: var(--base-variant);
+  color: var(--color);
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+form input {
+  box-sizing: border-box;
+  flex-grow: 1;
+  min-width: 0;
+  height: 50px;
+  padding: 1em;
+  font: inherit;
+  border-radius: 0 10px 10px 0;
+  border: 2px solid var(--base-variant);
+  border-left: none;
+  background-color: var(--base-variant);
+  transition: 150ms ease;
+}
+
+form input:hover {
+  border: var(--accent-color);
+}
+
+form input:focus {
+  outline: none;
+  border-color: var(--color);
+}
+div:has(input:focus) > label {
+  background-color: var(--color);
+}
+
+form input::placeholder {
+  color: var(--color);
+}
+
+form button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 1000px;
+  padding: 0.85em 4em;
+  background-color: var(--accent-color);
+  color: var(--base-variant);
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 150ms ease;
+}
+
+form button:hover {
+  background-color: var(--color);
+}
+
+form button:focus {
+  outline: none;
+  background-color: var(--color);
+}
+
+.asign {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+.asign:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1100px) {
+  .wrapper {
+    width: min(600px, 100%);
+    border-radius: 0;
+  }
+}
+
+form div.incorrect label {
+  background-color: #f06272;
+}
+
+form.incorrect input {
+  border-color: #f06272;
+}
+
+/* 
 .main-color {
   background-color: #baeaa9;
 }
@@ -652,7 +774,7 @@ figcaption {
   background: #d3bdff;
   border-radius: 5%;
   /* justify-content: center; */
-  align-items: flex-start;
+/* align-items: flex-start;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -709,23 +831,7 @@ figcaption {
     font-size: 10px;
   }
 }
-
-@keyframes boom {
-  from {
-    transform: translateX(1200px) translateY(0px) scale(1);
-  }
-  to {
-    transform: translateX(600px) translateY(-140px) scale(1.5) rotate(-20deg);
-  }
-}
-@keyframes burn {
-  from {
-    opacity: 0%;
-  }
-  to {
-    opacity: 100%;
-  }
-}
+*/
 
 /* footer */
 
