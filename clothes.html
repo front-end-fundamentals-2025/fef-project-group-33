@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/popup-cart.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="js/clothing.js" defer></script>
+    <script src="js/darkmode.js" defer></script>
+    <script src="js/searchbar.js" defer></script>
+    <script src="js/cart.js" defer></script>
   </head>
   <body>
     <header>
@@ -74,8 +77,9 @@
           </button>
           <div class="green-bg anchor-lines icon-cart">
             <li>
-              <img class="seventy-percent" src="img/bag 1.png" alt="cart" />
-              <span>0</span>
+              <a href="#" onclick="toggleCart()">
+                <img src="img/bag 1.png" alt="Shopping Cart" class="nav-icon" />
+              </a>
             </li>
           </div>
         </ul>
@@ -83,13 +87,39 @@
     </header>
     <main>
       <img class="banner" src="img/clothesBanner.png" alt="clothes section" />
-      <div class="listProduct"></div>
-      <div class="cartTab">
-        <h1>Shopping Cart</h1>
-        <div class="listCart"></div>
-        <div class="btn">
-          <button class="close">CLOSE</button>
-          <button class="checkOut">CHECK OUT</button>
+      <div class="listProduct">
+        <div class="item">
+          <a href="#">
+            <img src="img/bottom1.png" alt="The Last of Us II" />
+          </a>
+          <p class="price">Jeans</p>
+          <p class="price">799 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('The Last of Us II', '799', 'img/bottom1.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
+      <div id="cart-popup" class="cart-popup">
+        <div class="cart-content">
+          <h2>Shopping Cart</h2>
+          <ul id="cart-items">
+            <!-- Cart items will be dynamically added here by JavaScript -->
+          </ul>
+          <div class="price-sum">
+            <p>Total: <span id="total-price">0 SEK</span></p>
+          </div>
+          <div class="cart-buttons">
+            <button class="continue-shopping-button" onclick="closePopup()">
+              Continue Shopping
+            </button>
+            <a href="checkout.html">
+              <button class="checkout-button">Checkout</button>
+            </a>
+          </div>
         </div>
       </div>
     </main>

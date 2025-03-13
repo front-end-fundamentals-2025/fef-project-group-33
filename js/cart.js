@@ -45,10 +45,12 @@ function displayCart() {
   const cartItems = getCartLocalStorage();
   const cartItemsList = document.getElementById("cart-items");
   const totalPriceElement = document.getElementById("total-price");
+  const totalAmountElement = document.getElementById("total-amount");
   const priceSumElement = document.querySelector(".price-sum");
   cartItemsList.innerHTML = ""; // Clear the current list
 
   let totalPrice = 0;
+  let totalAmount = 0;
 
   if (cartItems.length === 0) {
     const emptyMessage = document.createElement("li");
@@ -121,11 +123,13 @@ function displayCart() {
 
       // Calculate total price
       totalPrice += item.price * item.quantity;
+      totalAmount += totalAmount + item.quantity;
     });
   }
 
-  // Update total price element
+  // Update total price and amount
   totalPriceElement.textContent = `${totalPrice} SEK`;
+  totalAmountElement.textContent = `${totalAmount}`;
 }
 
 // Update the quantity of an item in the cart
