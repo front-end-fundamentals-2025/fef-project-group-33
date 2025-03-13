@@ -45,3 +45,23 @@ allInputs.forEach((input) => {
     }
   });
 });
+
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  firstname_input.value;
+  password_input.value;
+
+  var user = localStorage.getItem(firstname_input);
+
+  if (user) {
+    var parsedUser = JSON.parse(user);
+    if (parsedUser.password === password_input) {
+      localStorage.setItem("user", JSON.stringify(parsedUser));
+      //   window.location.href = "userpage.html";
+    } else {
+      alert("Incorrect password");
+    }
+  } else {
+    alert("User not found");
+  }
+});

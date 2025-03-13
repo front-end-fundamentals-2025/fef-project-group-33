@@ -72,37 +72,33 @@ allInputs.forEach((input) => {
 // const form = document.getElementById("form");
 // const firstname_input = document.getElementById("firstname-input");
 
-// var user = localStorage.getItem("user");
-// if (user) {
-//   var parsedUser = JSON.parse(user);
-//   document.getElementById("user-name").innerHTML = "Hello ${parsedUser.name}";
-//   document.getElementById("logoutButton").classList.remove("hidden");
-// } else {
-//   document.getElementById("user-name").innerHTML =
-//     "Hello, please <a href = 'login.html'> login </a>";
-// }
+var user = localStorage.getItem("user");
+if (user) {
+  var parsedUser = JSON.parse(user);
+  document.getElementById("user-name").innerHTML = "Hello ${parsedUser.name}";
+  document.getElementById("logoutButton").classList.remove("hidden");
+} else {
+  document.getElementById("user-name").innerHTML =
+    "Hello, please <a href = 'login.html'> login </a>";
+}
 
-// document.getElementById("logoutButton").addEventListener("click", function () {
-//   localStorage.removeItem("user");
-//   window.location.href = "signin.html";
-// });
+document.getElementById("logoutButton").addEventListener("click", function () {
+  localStorage.removeItem("user");
+});
 
-// form.addEventListener("submit", function (event) {
-//   event.preventDefault();
-//   firstname_input.value;
-//   password_input.value;
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+  firstname_input.value;
+  email_input.value;
+  password_input.value;
+  repeat_password_input.value;
 
-//   var user = localStorage.getItem(firstname_input);
+  const user = {
+    name: firstname_input,
+    email: email_input,
+    password: password_input,
+  };
 
-//   if (user) {
-//     var parsedUser = JSON.parse(user);
-//     if (parsedUser.password === password_input) {
-//       localStorage.setItem("user", JSON.stringify(parsedUser));
-//       window.location.href = "userpage.html";
-//     } else {
-//       alert("Incorrect password");
-//     }
-//   } else {
-//     alert("User not found");
-//   }
-// });
+  localStorage.setItem(firstname_input, JSON.stringify(user));
+  alert("Registration successful! Please login");
+});
