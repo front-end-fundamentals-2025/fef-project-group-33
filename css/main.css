@@ -724,120 +724,12 @@ form.incorrect input {
   color: #f06272;
 }
 
-/* 
-.main-color {
-  background-color: #baeaa9;
-}
+/*USER PAGE*/
 
-.h1log {
-  margin-left: 37%;
-  margin-top: 5%;
-}
-
-.h1sign {
-  margin-left: 35%;
-  margin-top: 5%;
-}
-
-.h3sign {
-  margin-left: 10pt;
-}
-
-.asign {
-  color: black;
-}
-
-.formlog {
-  margin-left: 10pt;
-  margin-bottom: 10%;
-}
-
-.formsign {
-  margin-left: 10pt;
-  margin-bottom: 5%;
-}
-
-#rectangle {
-  display: flexbox;
-  width: 30%;
-  height: 60%;
-  background: #d3bdff;
-  border-radius: 5%;
-  justify-content: center;
-  align-items: flex-start;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-#rectangle2 {
-  display: flexbox;
-  width: 30%;
-  height: 72%;
-  background: #d3bdff;
-  border-radius: 5%;
-  /* justify-content: center; */
-/* align-items: flex-start;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-@media screen and (max-height: 521px) {
-  .formlog {
-    margin-left: 10pt;
-    margin-bottom: 5%;
-  }
-  .h1log,
-  h3,
-  a {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-height: 591px) {
-  .formsign {
-    margin-left: 10pt;
-    margin-bottom: 5%;
-  }
-  .h1sign,
-  .h3sign,
-  .asign {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-height: 416px) {
-  .formlog,
-  .formsign {
-    margin-left: 10pt;
-    margin-bottom: 2%;
-  }
-  p,
-  .h1log,
-  .h1sign,
-  h3,
-  a {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-height: 440px) {
-  .formsign {
-    margin-left: 10pt;
-    margin-bottom: 2%;
-  }
-  .h1sign,
-  .h3sign,
-  .asign {
-    font-size: 10px;
-  }
-}
-*/
-
-/* footer */
+/* .user-name {
+  margin-left: 7%;
+  margin-right: 7%;
+} */
 
 footer {
   /* margin-top: 3rem; */
