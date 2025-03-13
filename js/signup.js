@@ -16,8 +16,6 @@ form.addEventListener("submit", (e) => {
       password_input.value,
       repeat_password_input.value
     );
-  } else {
-    errors = getLoginFormErrors(firstname_input.value, password_input.value);
   }
   if (errors.length > 0) {
     e.preventDefault();
@@ -49,20 +47,6 @@ function getSignupFormErrors(firstname, email, password, repeatPassword) {
     errors.push("Password does not match Repeated Password");
     password_input.parentElement.classList.add("incorrect");
     repeat_password_input.parentElement.classList.add("incorrect");
-  }
-
-  return errors;
-}
-
-function getLoginFormErrors(firstname, password) {
-  let errors = [];
-  if (firstname === "" || firstname == null) {
-    errors.push("Firstname is required");
-    firstname_input.parentElement.classList.add("incorrect");
-  }
-  if (password === "" || password == null) {
-    errors.push("Password is required");
-    password_input.parentElement.classList.add("incorrect");
   }
 
   return errors;
