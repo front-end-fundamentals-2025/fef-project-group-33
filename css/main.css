@@ -720,6 +720,10 @@ form.incorrect input {
   border-color: #f06272;
 }
 
+#error-message {
+  color: #f06272;
+}
+
 /* 
 .main-color {
   background-color: #baeaa9;
