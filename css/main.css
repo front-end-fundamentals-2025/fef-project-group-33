@@ -194,43 +194,24 @@ a {
   margin-top: 10px;
   border-radius: 20px;
 }
-
-.listClothing .item img {
-  width: 100%;
-  border-radius: 2%;
-}
-.listClothing .item img:hover {
-  width: 100%;
-  border-radius: 2%;
-  filter: drop-shadow(0 50px 20px rgba(71, 71, 71, 0.6));
-}
-
-.listClothing {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-}
-.listClothing .item {
-  width: 100%;
-  background-color: #b2daa44b;
-  padding: 20px;
+.listProduct .item button:hover {
+  background-color: #d3bdff;
+  filter: drop-shadow(0 20px 20px rgb(100, 90, 121));
+  color: #eee;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
   border-radius: 20px;
 }
-.listClothing .item h2 {
-  font-weight: 500;
-  font-size: large;
-}
-.listClothing .item .price {
-  letter-spacing: 1px;
-  font-size: medium;
-}
-.listClothing .item button {
+.pageButton {
   background-color: #353432;
   color: #eee;
   border: none;
   padding: 5px 10px;
   margin-top: 10px;
   border-radius: 20px;
+  width: 150px;
+  height: 35px;
 }
 
 @media screen and (max-width: 520px) {
