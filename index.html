@@ -81,6 +81,7 @@
               <a href="#" onclick="toggleCart()">
                 <img src="img/bag 1.png" alt="Shopping Cart" class="nav-icon" />
               </a>
+              <span id="total-amount">0</span>
             </li>
           </div>
         </ul>
@@ -99,18 +100,7 @@
           alt="product categories"
         />
       </div>
-      <div class="game-item">
-        <a href="#">
-          <img src="img/game-last-of-us.jpg" alt="The Last of Us II" />
-        </a>
-        <p class="price">799 SEK</p>
-        <button
-          class="buy-button"
-          onclick="addToCart('The Last of Us II', '799', 'img/game-last-of-us.jpg')"
-        >
-          BUY NOW
-        </button>
-      </div>
+
       <section class="pcategories-container">
         <a class="anchor-lines" href="clothes.html">
           <figure class="center-text">
@@ -144,7 +134,22 @@
         </a>
       </section>
       <img class="banner" src="img/deals.png" alt="deals section" />
-      <div class="listProduct"></div>
+      <div class="listProduct">
+        <div class="item">
+          <a href="#">
+            <img src="img/bottom1.png" alt="The Last of Us II" />
+          </a>
+          <p class="price">Jeans</p>
+          <p class="price">799 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('The Last of Us II', '799', 'img/bottom1.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
       <div id="cart-popup" class="cart-popup">
         <div class="cart-content">
           <h2>Shopping Cart</h2>
@@ -155,10 +160,7 @@
             <p>Total: <span id="total-price">0 SEK</span></p>
           </div>
           <div class="cart-buttons">
-            <button
-              class="continue-shopping-button"
-              onclick="continueShopping()"
-            >
+            <button class="continue-shopping-button" onclick="closePopup()">
               Continue Shopping
             </button>
             <a href="checkout.html">
