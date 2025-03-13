@@ -17,7 +17,7 @@ form.addEventListener("submit", (e) => {
       repeat_password_input.value
     );
   } else {
-    errors = getLoginFormErrors(email_input.value, password_input.value);
+    errors = getLoginFormErrors(firstname_input.value, password_input.value);
   }
   if (errors.length > 0) {
     e.preventDefault();
@@ -54,11 +54,11 @@ function getSignupFormErrors(firstname, email, password, repeatPassword) {
   return errors;
 }
 
-function getLoginFormErrors(email, password) {
+function getLoginFormErrors(firstname, password) {
   let errors = [];
-  if (email === "" || email == null) {
-    errors.push("Email is required");
-    email_input.parentElement.classList.add("incorrect");
+  if (firstname === "" || firstname == null) {
+    errors.push("Firstname is required");
+    firstname_input.parentElement.classList.add("incorrect");
   }
   if (password === "" || password == null) {
     errors.push("Password is required");
@@ -88,33 +88,37 @@ allInputs.forEach((input) => {
 // const form = document.getElementById("form");
 // const firstname_input = document.getElementById("firstname-input");
 
-var user = localStorage.getItem("user");
-if (user) {
-  var parsedUser = JSON.parse(user);
-  document.getElementById("user-name").innerHTML = "Hello ${parsedUser.name}";
-  document.getElementById("logoutButton").classList.remove("hidden");
-} else {
-  document.getElementById("user-name").innerHTML =
-    "Hello, please <a href = 'login.html'> login </a>";
-}
+// var user = localStorage.getItem("user");
+// if (user) {
+//   var parsedUser = JSON.parse(user);
+//   document.getElementById("user-name").innerHTML = "Hello ${parsedUser.name}";
+//   document.getElementById("logoutButton").classList.remove("hidden");
+// } else {
+//   document.getElementById("user-name").innerHTML =
+//     "Hello, please <a href = 'login.html'> login </a>";
+// }
 
-document.getElementById("logoutButton").addEventListener("click", function () {
-  localStorage.removeItem("user");
-  window.location.href = "login.html signin.html";
-});
+// document.getElementById("logoutButton").addEventListener("click", function () {
+//   localStorage.removeItem("user");
+//   window.location.href = "signin.html";
+// });
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-  firstname_input.value;
-  password_input.value;
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
+//   firstname_input.value;
+//   password_input.value;
 
-  var user = localStorage.getItem(firstname_input);
+//   var user = localStorage.getItem(firstname_input);
 
-  if (user) {
-    var parsedUser = JSON.parse(user);
-    if (parsedUser.password === password_input) {
-      localStorage.setItem("user", JSON.stringify(parsedUser));
-      window.location.href = "userpage.html";
-    }
-  }
-});
+//   if (user) {
+//     var parsedUser = JSON.parse(user);
+//     if (parsedUser.password === password_input) {
+//       localStorage.setItem("user", JSON.stringify(parsedUser));
+//       window.location.href = "userpage.html";
+//     } else {
+//       alert("Incorrect password");
+//     }
+//   } else {
+//     alert("User not found");
+//   }
+// });
