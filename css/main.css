@@ -637,6 +637,7 @@ form input {
   font: inherit;
   border-radius: 0 10px 10px 0;
   border: 2px solid var(--base-variant);
+  color: var(--color);
   border-left: none;
   background-color: var(--base-variant);
   transition: 150ms ease;
