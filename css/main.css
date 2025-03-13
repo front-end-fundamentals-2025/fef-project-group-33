@@ -487,6 +487,10 @@ body.showCart .container {
 .anchor-lines {
   text-decoration: none;
 }
+.thriftiqueLogo {
+  padding-left: 15px;
+  padding-top: 15px;
+}
 
 .caption-text {
   margin-top: 7pt;
