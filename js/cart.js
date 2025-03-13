@@ -1,17 +1,3 @@
-// toggle the cart
-function toggleCart() {
-  const cartPopup = document.getElementById("cart-popup");
-  if (cartPopup.style.display === "block") {
-    cartPopup.style.display = "none";
-  } else {
-    cartPopup.style.display = "block";
-    displayCart();
-  }
-}
-function closePopup() {
-  document.getElementById("cart-popup").style.display = "none";
-}
-
 function setCartLocalStorage(cartItems) {
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 }
@@ -20,28 +6,7 @@ function getCartLocalStorage() {
   return cartItems ? JSON.parse(cartItems) : [];
 }
 
-function addToCart(gameName, price, imageSrc) {
-  let cartItems = getCartLocalStorage();
-  const existingItemIndex = cartItems.findIndex(
-    (item) => item.name === gameName
-  );
-
-  if (existingItemIndex !== -1) {
-    cartItems[existingItemIndex].quantity += 1;
-  } else {
-    cartItems.push({
-      name: gameName,
-      price: price,
-      imageSrc: imageSrc,
-      quantity: 1,
-    });
-  }
-
-  setCartLocalStorage(cartItems);
-  displayCart();
-}
-
-function displayCart() {
+function cartDisplay() {
   const cartItems = getCartLocalStorage();
   const cartItemsList = document.getElementById("cart-items");
   const totalPriceElement = document.getElementById("total-price");
@@ -54,6 +19,7 @@ function displayCart() {
 
   if (cartItems.length === 0) {
     const emptyMessage = document.createElement("li");
+    emptyMessage.classList.add("white");
     emptyMessage.textContent = "Your cart is empty.";
     cartItemsList.appendChild(emptyMessage);
     priceSumElement.style.display = "none"; // Hide the total price element
@@ -68,8 +34,8 @@ function displayCart() {
       cartItemLeft.classList.add("cart-item-left");
 
       const cartItemImg = document.createElement("img");
-      cartItemImg.src = item.imageSrc;
-      cartItemImg.alt = "Game Image";
+      cartItemImg.src = item.image;
+      cartItemImg.alt = "";
       cartItemImg.classList.add("cart-item-img");
 
       const cartItemDetails = document.createElement("div");
@@ -123,7 +89,7 @@ function displayCart() {
 
       // Calculate total price
       totalPrice += item.price * item.quantity;
-      totalAmount += totalAmount + item.quantity;
+      totalAmount += item.quantity;
     });
   }
 
@@ -133,26 +99,61 @@ function displayCart() {
 }
 
 // Update the quantity of an item in the cart
-function updateQuantity(gameName, delta) {
+function updateQuantity(itemName, delta) {
   let cartItems = getCartLocalStorage();
-  const itemIndex = cartItems.findIndex((item) => item.name === gameName);
+  const itemIndex = cartItems.findIndex((item) => item.name === itemName);
 
   if (itemIndex !== -1) {
     cartItems[itemIndex].quantity += delta;
 
     setCartLocalStorage(cartItems);
-    displayCart();
+    cartDisplay();
   }
   if (cartItems[itemIndex].quantity < 1) {
-    removeItemFromCart(gameName);
+    removeItemFromCart(itemName);
   }
 }
 
-function removeItemFromCart(gameName) {
+function removeItemFromCart(itemName) {
   let cartItems = getCartLocalStorage();
 
-  cartItems = cartItems.filter((item) => item.name !== gameName);
+  cartItems = cartItems.filter((item) => item.name !== itemName);
 
   setCartLocalStorage(cartItems);
-  displayCart();
+  cartDisplay();
+}
+
+// toggle the cart
+function toggleCart() {
+  const cartPopup = document.getElementById("cart-popup");
+  if (cartPopup.style.display === "block") {
+    cartPopup.style.display = "none";
+  } else {
+    cartPopup.style.display = "block";
+    cartDisplay();
+  }
+}
+function closePopup() {
+  document.getElementById("cart-popup").style.display = "none";
+}
+
+function addToCart(itemName, price, image) {
+  let cartItems = getCartLocalStorage();
+  const existingItemIndex = cartItems.findIndex(
+    (item) => item.name === itemName
+  );
+
+  if (existingItemIndex !== -1) {
+    cartItems[existingItemIndex].quantity += 1;
+  } else {
+    cartItems.push({
+      name: itemName,
+      price: price,
+      image: image,
+      quantity: 1,
+    });
+  }
+
+  setCartLocalStorage(cartItems);
+  cartDisplay();
 }

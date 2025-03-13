@@ -4,16 +4,16 @@
   position: fixed;
   z-index: 1000;
   right: 0;
-  top: 59px;
-  width: 300px;
-  min-height: 100px;
-  height: auto;
+  top: 90px;
+  width: 400px;
+  min-height: auto;
+  height: 700px;
   max-height: calc(100% - 60px);
   overflow-y: auto;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: #353432;
   border-left: 1px solid #888;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-  transition: opacity 0.3s ease-in-out;
+  transition: 1s;
   border-radius: 10px;
 }
 
@@ -28,7 +28,9 @@
   justify-content: space-between;
   height: 100%;
 }
-
+.white {
+  color: white;
+}
 .close {
   color: #aaa;
   float: right;
@@ -82,11 +84,12 @@
 .cart-item-title {
   font-size: 16px;
   font-weight: bold;
+  color: white;
 }
 
 .cart-item-price {
   font-size: 14px;
-  color: #ccc;
+  color: white;
 }
 
 /* Quantity buttons and remove button */
@@ -101,11 +104,12 @@
   display: flex;
   align-items: center;
   gap: 5px;
+  color: white;
 }
 
 .quantity-btn {
-  background-color: #00bcd4;
-  color: white;
+  background-color: #d3bdff;
+  color: black;
   border: none;
   padding: 3px 8px;
   font-size: 12px;
@@ -165,8 +169,8 @@
   width: 100%;
   padding: 20px 40px;
   font-size: 16px;
-  background-color: #00bcd4;
-  color: #fff;
+  background-color: #d3bdff;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +178,7 @@
 }
 
 .checkout-button:hover {
-  background-color: #0097a7;
+  background-color: #8c52ff;
 }
 
 .continue-shopping-button {
@@ -183,8 +187,8 @@
   width: 60%;
   padding: 20px 40px;
   font-size: 16px;
-  background-color: #4caf50;
-  color: #fff;
+  background-color: #88d16b;
+  color: black;
   display: flex;
   justify-content: center;
   align-items: center;
