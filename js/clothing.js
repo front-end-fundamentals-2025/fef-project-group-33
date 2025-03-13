@@ -107,6 +107,12 @@ const addToCart = (product_id) => {
 const addCartToMemory = () => {
   localStorage.setItem("cart", JSON.stringify(cart));
 };
+
+function getCartFromLocalStorage() {
+  const cartItems = localStorage.getItem("cart");
+  return cartItems ? JSON.parse(cartItems) : [];
+}
+
 const addCartToHTML = () => {
   listCartHTML.innerHTML = "";
   let totalQuantity = 0;
@@ -180,30 +186,3 @@ const changeQuantityCart = (product_id, type) => {
   addCartToHTML();
   addCartToMemory();
 };
-
-//DARKMODE//
-//inspired by: https://www.youtube.com/watch?v=_gKEUYarehE//
-
-let darkmode = localStorage.getItem("darkmode");
-const themeSwitch = document.getElementById("theme-switch");
-
-const enableDarkmode = () => {
-  document.body.classList.add("darkmode");
-  localStorage.setItem("darkmode", "active");
-};
-
-const disableDarkmode = () => {
-  document.body.classList.remove("darkmode");
-  localStorage.setItem("darkmode", null);
-};
-
-if (darkmode === "active") enableDarkmode();
-
-themeSwitch.addEventListener("click", () => {
-  darkmode = localStorage.getItem("darkmode");
-  if (darkmode !== "active") {
-    enableDarkmode();
-  } else {
-    disableDarkmode();
-  }
-});
