@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Jewellery</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/popup-cart.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -80,9 +81,14 @@
               />
             </svg>
           </button>
-          <a class="green-bg anchor-lines" href="cart.html"
-            ><li>Cart Placeholder</li></a
-          >
+          <div class="green-bg anchor-lines icon-cart">
+            <li>
+              <a href="#" onclick="toggleCart()">
+                <img src="img/bag 1.png" alt="Shopping Cart" class="nav-icon" />
+              </a>
+              <span id="total-amount">0</span>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
@@ -92,101 +98,153 @@
         src="img/jewelleryBanner.png"
         alt="jewellery section"
       />
-      <section class="deals-container">
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/bracelet1.png"
-              alt="bracelet1"
-            />
-            <figcaption class="caption-text">
-              Gold Ice (on your wrist)
-            </figcaption>
-            <figcaption class="price-text">150 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/bracelet2.png"
-              alt="bracelet2"
-            />
-            <figcaption class="caption-text">
-              Silver Ice (on your wrist)
-            </figcaption>
-            <figcaption class="price-text">150 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/bracelet3.png"
-              alt="bracelet3"
-            />
-            <figcaption class="caption-text">
-              Rose Gold Ice (on your wrist)
-            </figcaption>
-            <figcaption class="price-text">150 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/earring1.png" alt="earring1" />
-            <figcaption class="caption-text">Silver Hoop Ice</figcaption>
-            <figcaption class="price-text">90 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/earring2.png" alt="earring2" />
-            <figcaption class="caption-text">Silver AND Gold Ice</figcaption>
-            <figcaption class="price-text">90 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/earring3.png" alt="earring3" />
-            <figcaption class="caption-text">Gold Flower Ice</figcaption>
-            <figcaption class="price-text">90 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/necklace1.png"
-              alt="necklace1"
-            />
-            <figcaption class="caption-text">Gold Neck Ice</figcaption>
-            <figcaption class="price-text">200 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/necklace2.png"
-              alt="necklace2"
-            />
-            <figcaption class="caption-text">Silver Neck Ice</figcaption>
-            <figcaption class="price-text">200 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img
-              class="portfolio-img"
-              src="img/necklace3.png"
-              alt="necklace3"
-            />
-            <figcaption class="caption-text">Gold Heart Ice</figcaption>
-            <figcaption class="price-text">200 SEK</figcaption>
-          </figure>
-        </a>
-      </section>
+      <div class="listProduct">
+        <div class="item">
+          <a href="#">
+            <img src="img/bracelet1.png" alt="" />
+          </a>
+          <p class="price">Gold Ice (on your wrist)</p>
+          <p class="price">150 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Gold Ice (on your wrist)', '150', 'img/bracelet1.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/bracelet2.png" alt="" />
+          </a>
+          <p class="price">Silver Ice (on your wrist)</p>
+          <p class="price">150 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Silver Ice (on your wrist)', '150', 'img/bracelet2.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/bracelet3.png" alt="" />
+          </a>
+          <p class="price">Rose Gold Ice (on your wrist)</p>
+          <p class="price">150 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Rose Gold Ice (on your wrist)', '150', 'img/bracelet3.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/earring1.png" alt="" />
+          </a>
+          <p class="price">Silver Hoop Ice</p>
+          <p class="price">90 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Silver Hoop Ice', '90', 'img/earring1.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/earring2.png" alt="" />
+          </a>
+          <p class="price">Silver AND Gold Ice</p>
+          <p class="price">90 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Silver AND Gold Ice', '90', 'img/earring2.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/earring3.png" alt="" />
+          </a>
+          <p class="price">Gold Flower Ice</p>
+          <p class="price">90 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Gold Flower Ice', '90', 'img/earring3.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/necklace1.png" alt="" />
+          </a>
+          <p class="price">Gold Neck Ice</p>
+          <p class="price">200 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Gold Neck Ice', '200', 'img/necklace1.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/necklace2.png" alt="" />
+          </a>
+          <p class="price">Silver Neck Ice</p>
+          <p class="price">200 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Silver Neck Ice', '200', 'img/necklace2.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/necklace3.png" alt="" />
+          </a>
+          <p class="price">Gold Heart Ice</p>
+          <p class="price">200 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Gold Heart Ice', '200', 'img/necklace3.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
+      <div id="cart-popup" class="cart-popup">
+        <div class="cart-content">
+          <h2>Shopping Cart</h2>
+          <ul id="cart-items">
+            <!-- Cart items will be dynamically added here by JavaScript -->
+          </ul>
+          <div class="price-sum">
+            <p>Total: <span id="total-price">0 SEK</span></p>
+          </div>
+          <div class="cart-buttons">
+            <button class="continue-shopping-button" onclick="closePopup()">
+              Close
+            </button>
+            <a href="checkout.html">
+              <button class="checkout-button">Checkout</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <ul class="headerul">

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Accessories</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/popup-cart.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -80,83 +81,166 @@
               />
             </svg>
           </button>
-          <a class="green-bg anchor-lines" href="cart.html"
-            ><li>Cart Placeholder</li></a
-          >
+          <div class="green-bg anchor-lines icon-cart">
+            <li>
+              <a href="#" onclick="toggleCart()">
+                <img src="img/bag 1.png" alt="Shopping Cart" class="nav-icon" />
+                <span id="total-amount">0</span>
+              </a>
+            </li>
+          </div>
         </ul>
       </nav>
     </header>
     <main>
       <img class="banner" src="img/accessories.png" alt="accessories section" />
-      <section class="deals-container">
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/hat1.png" alt="hat1" />
-            <figcaption class="caption-text">Blue Bucket Hat</figcaption>
-            <figcaption class="price-text">250 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/hat2.png" alt="hat2" />
-            <figcaption class="caption-text">CowFella Hat</figcaption>
-            <figcaption class="price-text">250 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/hat3.png" alt="hat3" />
-            <figcaption class="caption-text">Retro Cap</figcaption>
-            <figcaption class="price-text">250 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/glasses1.png" alt="glasses1" />
-            <figcaption class="caption-text">
-              Thick Black Framed Glasses
-            </figcaption>
-            <figcaption class="price-text">150 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/glasses2.png" alt="glasses2" />
-            <figcaption class="caption-text">
-              Burgundy Framed Glasses
-            </figcaption>
-            <figcaption class="price-text">150 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/glasses3.png" alt="glasses3" />
-            <figcaption class="caption-text">Blue Lens Glasses</figcaption>
-            <figcaption class="price-text">150 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/bag1.png" alt="bag1" />
-            <figcaption class="caption-text">Solar System Bag</figcaption>
-            <figcaption class="price-text">250 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/bag2.png" alt="bag2" />
-            <figcaption class="caption-text">Red Star Bag</figcaption>
-            <figcaption class="price-text">250 SEK</figcaption>
-          </figure>
-        </a>
-        <a class="anchor-lines" href="#">
-          <figure class="no-margin-left">
-            <img class="portfolio-img" src="img/bag3.png" alt="bag3" />
-            <figcaption class="caption-text">Domino Chain Bag</figcaption>
-            <figcaption class="price-text">250 SEK</figcaption>
-          </figure>
-        </a>
-      </section>
+      <div class="listProduct">
+        <div class="item">
+          <a href="#">
+            <img src="img/hat1.png" alt="" />
+          </a>
+          <p class="price">Blue Bucket Hat</p>
+          <p class="price">250 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Blue Bucket Hat', '250', 'img/hat1.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/hat2.png" alt="" />
+          </a>
+          <p class="price">CowFella Hat</p>
+          <p class="price">250 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('CowFella Hat', '250', 'img/hat2.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/hat3.png" alt="" />
+          </a>
+          <p class="price">Retro Cap</p>
+          <p class="price">250 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Retro Cap', '250', 'img/hat3.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/glasses1.png" alt="" />
+          </a>
+          <p class="price">Thick Black Framed Glasses</p>
+          <p class="price">150 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Thick Black Framed Glasses', '150', 'img/glasses1.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/glasses2.png" alt="" />
+          </a>
+          <p class="price">Burgundy Framed Glasses</p>
+          <p class="price">150 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Burgundy Framed Glasses', '150', 'img/glasses2.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/glasses3.png" alt="" />
+          </a>
+          <p class="price">Blue Lens Glasses</p>
+          <p class="price">150 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Blue Lens Glasses', '150', 'img/glasses3.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/bag1.png" alt="" />
+          </a>
+          <p class="price">Solar System Bag</p>
+          <p class="price">250 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Solar System Bag', '250', 'img/bag1.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/bag2.png" alt="" />
+          </a>
+          <p class="price">Red Star Bag</p>
+          <p class="price">250 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Red Star Bag', '250', 'img/bag2.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+        <div class="item">
+          <a href="#">
+            <img src="img/bag3.png" alt="" />
+          </a>
+          <p class="price">Domino Chain Bag</p>
+          <p class="price">250 SEK</p>
+
+          <button
+            class="buy-button"
+            onclick="addToCart('Domino Chain Bag', '250', 'img/bag3.png')"
+          >
+            BUY NOW
+          </button>
+        </div>
+      </div>
+      <div id="cart-popup" class="cart-popup">
+        <div class="cart-content">
+          <h2>Shopping Cart</h2>
+          <ul id="cart-items">
+            <!-- Cart items will be dynamically added here by JavaScript -->
+          </ul>
+          <div class="price-sum">
+            <p>Total: <span id="total-price">0 SEK</span></p>
+          </div>
+          <div class="cart-buttons">
+            <button class="continue-shopping-button" onclick="closePopup()">
+              Continue Shopping
+            </button>
+            <a href="checkout.html">
+              <button class="checkout-button">Checkout</button>
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <ul class="headerul">
@@ -168,3 +252,68 @@
     </footer>
   </body>
 </html>
+<!-- <section class="deals-container">
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/hat1.png" alt="hat1" />
+      <figcaption class="caption-text">Blue Bucket Hat</figcaption>
+      <figcaption class="price-text">250 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/hat2.png" alt="hat2" />
+      <figcaption class="caption-text">CowFella Hat</figcaption>
+      <figcaption class="price-text">250 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/hat3.png" alt="hat3" />
+      <figcaption class="caption-text">Retro Cap</figcaption>
+      <figcaption class="price-text">250 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/glasses1.png" alt="glasses1" />
+      <figcaption class="caption-text">Thick Black Framed Glasses</figcaption>
+      <figcaption class="price-text">150 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/glasses2.png" alt="glasses2" />
+      <figcaption class="caption-text">Burgundy Framed Glasses</figcaption>
+      <figcaption class="price-text">150 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/glasses3.png" alt="glasses3" />
+      <figcaption class="caption-text">Blue Lens Glasses</figcaption>
+      <figcaption class="price-text">150 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/bag1.png" alt="bag1" />
+      <figcaption class="caption-text">Solar System Bag</figcaption>
+      <figcaption class="price-text">250 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/bag2.png" alt="bag2" />
+      <figcaption class="caption-text">Red Star Bag</figcaption>
+      <figcaption class="price-text">250 SEK</figcaption>
+    </figure>
+  </a>
+  <a class="anchor-lines" href="#">
+    <figure class="no-margin-left">
+      <img class="portfolio-img" src="img/bag3.png" alt="bag3" />
+      <figcaption class="caption-text">Domino Chain Bag</figcaption>
+      <figcaption class="price-text">250 SEK</figcaption>
+    </figure>
+  </a>
+</section> -->
