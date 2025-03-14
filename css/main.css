@@ -213,6 +213,17 @@ a {
   width: 150px;
   height: 35px;
 }
+.pageButton:hover {
+  background-color: #d3bdff;
+  filter: drop-shadow(0 20px 20px rgb(100, 90, 121));
+  color: #eee;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border-radius: 20px;
+  width: 150px;
+  height: 35px;
+}
 
 @media screen and (max-width: 520px) {
   header,
@@ -350,40 +361,6 @@ body.showCart .container {
 }
 .cartTab .close {
   background-color: #eee;
-}
-
-.listCart .item img {
-  width: 100%;
-}
-.listCart .item {
-  display: grid;
-  grid-template-columns: 70px 150px 50px 1fr;
-  gap: 10px;
-  text-align: center;
-  align-items: center;
-}
-.listCart .quantity span {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-color: #eee;
-  border-radius: 50%;
-  color: #555;
-  cursor: pointer;
-}
-.listCart .quantity span:nth-child(2) {
-  background-color: transparent;
-  color: #eee;
-  cursor: auto;
-}
-.listCart .item:nth-child(even) {
-  background-color: #eee1;
-}
-.listCart {
-  overflow: auto;
-}
-.listCart::-webkit-scrollbar {
-  width: 0;
 }
 
 .main-img {
