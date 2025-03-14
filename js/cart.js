@@ -12,7 +12,7 @@ function cartDisplay() {
   const totalPriceElement = document.getElementById("total-price");
   const totalAmountElement = document.getElementById("total-amount");
   const priceSumElement = document.querySelector(".price-sum");
-  cartItemsList.innerHTML = ""; // Clear the current list
+  cartItemsList.innerHTML = ""; // Clear the list
 
   let totalPrice = 0;
   let totalAmount = 0;
@@ -22,9 +22,9 @@ function cartDisplay() {
     emptyMessage.classList.add("white");
     emptyMessage.textContent = "Your cart is empty.";
     cartItemsList.appendChild(emptyMessage);
-    priceSumElement.style.display = "none"; // Hide the total price element
+    priceSumElement.style.display = "none";
   } else {
-    priceSumElement.style.display = "flex"; // Show the total price element
+    priceSumElement.style.display = "flex";
     cartItems.forEach((item) => {
       const cartItem = document.createElement("li");
       cartItem.classList.add("cart-item");
