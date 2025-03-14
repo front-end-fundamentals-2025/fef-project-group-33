@@ -473,7 +473,58 @@ body.showCart .container {
 
 .portfolio-img {
   width: 100%;
+}
+
+.portfolio-img1 {
+  width: 100%;
   border-radius: 15%;
+  animation-name: popout;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.33s;
+  animation-fill-mode: backwards;
+}
+
+.portfolio-img2 {
+  width: 100%;
+  border-radius: 15%;
+  animation-name: popout;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0.66s;
+  animation-fill-mode: backwards;
+}
+
+.portfolio-img3 {
+  width: 100%;
+  border-radius: 15%;
+  animation-name: popout;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes popout {
+  0% {
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.85;
+  }
+
+  30% {
+    opacity: 1;
+  }
+
+  40% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .no-margin-left {
