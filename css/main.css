@@ -720,7 +720,7 @@ form input::placeholder {
   color: var(--color);
 }
 
-form button {
+.login-button {
   margin-top: 10px;
   border: none;
   border-radius: 1000px;

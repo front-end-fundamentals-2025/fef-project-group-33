@@ -5,6 +5,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Contact</title>
       <link rel="stylesheet" href="css/main.css" />
+      <link rel="stylesheet" href="css/popup-cart.css" />
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
       <link
@@ -86,9 +87,18 @@
                 />
               </svg>
             </button>
-            <a class="green-bg anchor-lines" href="cart.html"
-              ><li>Cart Placeholder</li></a
-            >
+            <div class="green-bg anchor-lines icon-cart">
+              <li>
+                <a href="#" onclick="toggleCart()">
+                  <img
+                    src="img/bag 1.png"
+                    alt="Shopping Cart"
+                    class="nav-icon"
+                  />
+                </a>
+                <span id="total-amount">0</span>
+              </li>
+            </div>
           </ul>
         </nav>
       </header>
