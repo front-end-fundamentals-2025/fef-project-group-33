@@ -1,3 +1,4 @@
+/* DARKMODE */
 :root {
   --background-color: white;
   --base-variant: #e8e9ed;
@@ -13,15 +14,14 @@
 }
 
 #theme-switch {
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   padding: 0px;
   border-radius: 50%;
   background-color: var(--base-variant);
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: fixed; */
   top: 20px;
 }
 
@@ -41,6 +41,7 @@
   display: block;
 }
 
+/* GENERAL BODY */
 * {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
@@ -66,7 +67,7 @@ h3 {
   margin-left: 10pt;
 }
 
-/* header */
+/* HEADER */
 
 header {
   align-items: center;
@@ -88,6 +89,10 @@ header {
   color: #fff;
   top: 50%;
   right: 0px;
+}
+
+.nav-icon {
+  width: 30px;
 }
 
 #myInput {
@@ -298,10 +303,11 @@ a {
 }
 
 /* main */
+/*INDEX COVERIMAGE */
 .rect1 {
   width: 100%;
-  height: 300px;
-  background-color: #d3bdff;
+  height: 250px;
+  background-color: #ac8deb;
   text-align: center;
   align-items: center;
   display: flex;
@@ -309,16 +315,16 @@ a {
 
 .banner-text {
   font-size: 75px;
-  margin-left: 5%;
+  margin-left: 7%;
   align-items: center;
   text-align: center;
   font-weight: 100px;
   color: transparent;
-  background-size: 200%; /* Enlarged for smooth animation */
+  background-size: 200%;
   background-position: 0 50%;
   background-clip: text;
-  background-image: url("https://images.unsplash.com/photo-1732535725600-f805d8b33c9c?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  animation: animate-background 3s linear;
+  background-image: url(https://images.unsplash.com/photo-1540292370723-60cf448886c3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  animation: animate-background 5s linear;
   animation-fill-mode: both;
 }
 
@@ -331,6 +337,7 @@ a {
   }
 }
 
+/* CART */
 .image-float {
   float: left;
   display: flex;
@@ -415,6 +422,8 @@ body.showCart .container {
   margin: 0 auto;
 }
 
+/* HOVER AND INTERACTIVE ELEMENTS */
+
 .green-bg:hover {
   border-radius: 20px;
   background-color: rgba(178, 218, 164, 0.5);
@@ -432,29 +441,7 @@ body.showCart .container {
   padding: 15px;
 }
 
-.smol-percent {
-  width: 10%;
-  height: 50%;
-  margin-top: 75px;
-  margin-left: -130px;
-}
-
-.smoller-percent {
-  width: 4%;
-  height: 20%;
-  margin-top: 20px;
-  margin-left: 20px;
-}
-
-#pork-text {
-  margin-left: 15px;
-}
-
-#hamy-text {
-  margin-top: 70px;
-  margin-left: 15px;
-}
-
+/* EXTRA TEXT AND EDITORIAL */
 #price-text {
   margin-top: 90px;
   margin-left: -125px;
@@ -604,6 +591,10 @@ figcaption {
   font-size: x-large;
 }
 
+.header-indent {
+  margin-top: 40px;
+}
+
 .paragraph-last {
   margin-left: 10pt;
   margin-bottom: 40pt;
@@ -644,6 +635,7 @@ figcaption {
   margin-top: 28px;
   margin-left: 20px;
 }
+
 /*LOGIN AND SIGNUP*/
 .wrapper {
   box-sizing: border-box;
@@ -758,20 +750,6 @@ form button:focus {
     border-radius: 0;
   }
 }
-
-form div.incorrect label {
-  background-color: #f06272;
-}
-
-form.incorrect input {
-  border-color: #f06272;
-}
-
-#error-message {
-  color: #f06272;
-}
-
-/*USER PAGE*/
 
 footer {
   /* margin-top: 3rem; */
