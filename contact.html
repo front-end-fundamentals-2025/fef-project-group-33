@@ -121,6 +121,25 @@
         <p>Monday–Friday: 10 AM–6 PM</p>
         <p>Saturday: 9 AM–5 PM</p>
         <p>Sunday: Closed</p>
+        <div id="cart-popup" class="cart-popup">
+          <div class="cart-content">
+            <h2>Shopping Cart</h2>
+            <ul id="cart-items">
+              <!-- Cart items will be dynamically added here by JavaScript -->
+            </ul>
+            <div class="price-sum">
+              <p>Total: <span id="total-price">0 SEK</span></p>
+            </div>
+            <div class="cart-buttons">
+              <button class="continue-shopping-button" onclick="closePopup()">
+                Close
+              </button>
+              <a href="checkout.html">
+                <button class="checkout-button">Checkout</button>
+              </a>
+            </div>
+          </div>
+        </div>
       </main>
 
       <footer>
@@ -128,9 +147,6 @@
           <a class="anchor-lines" href="about us.html"><li>About us</li></a>
           <a class="anchor-lines" href="privacy.html"
             ><li>Privacy Policy</li></a
-          >
-          <a class="anchor-lines" href="contact.html"
-            ><li>Cookie Settings</li></a
           >
           <a class="anchor-lines" href="faq.html"><li>FAQ's</li></a>
           <a class="anchor-lines" href="contact.html"><li>Contact</li></a>
