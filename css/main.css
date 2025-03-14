@@ -442,6 +442,10 @@ body.showCart .container {
 }
 
 /* EXTRA TEXT AND EDITORIAL */
+
+.checkout-background {
+  background-color: #c6f5b4;
+}
 #price-text {
   margin-top: 90px;
   margin-left: -125px;
@@ -750,6 +754,8 @@ form button:focus {
     border-radius: 0;
   }
 }
+
+/* FOOTER */
 
 footer {
   /* margin-top: 3rem; */
